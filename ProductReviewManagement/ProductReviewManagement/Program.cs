@@ -16,8 +16,8 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductID=5,UserID=1,Rating=5,Review="nice",isLike=true},
                 new ProductReview(){ProductID=6,UserID=1,Rating=4,Review="nice",isLike=true},
                 new ProductReview(){ProductID=8,UserID=1,Rating=3,Review="nice",isLike=false},
-                new ProductReview(){ProductID=8,UserID=1,Rating=2,Review="nice",isLike=true},
-                new ProductReview(){ProductID=2,UserID=1,Rating=1,Review="nice",isLike=true},
+                new ProductReview(){ProductID=9,UserID=1,Rating=7,Review="nice",isLike=true},
+                new ProductReview(){ProductID=4,UserID=1,Rating=10,Review="nice",isLike=true},
                 new ProductReview(){ProductID=10,UserID=1,Rating=10,Review="nice",isLike=true},
                 new ProductReview(){ProductID=11,UserID=1,Rating=3,Review="nice",isLike=true},
                 new ProductReview(){ProductID=12,UserID=1,Rating=2,Review="Good",isLike=true},
@@ -46,6 +46,9 @@ namespace ProductReviewManagement
             Console.WriteLine("UC2- Retrieving Top 3 records based on rating: ");
             Management management = new Management();
             management.TopRecords(productReviewList);
+            Console.WriteLine("\n");
+            Console.WriteLine("UC3- Retrieving records with specific conditions: ");
+            management.SelectedRecords(productReviewList);
         }
     }
 }
